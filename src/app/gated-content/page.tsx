@@ -52,10 +52,10 @@ const NotAllowed = () => {
         <div className="flex flex-col min-h-[100vh] items-center justify-center p-4 text-center">
             <p>You do not own SHMIGGLE PASS NFT</p>
             <Link href="/">
-            <button className="mt-4 bg-zinc-100 text-black px-4 py-2 rounded-md">Go to login</button>
+            <button className="mt-4 bg-zinc-100 text-black px-4 py-2 rounded-md">Back</button>
             </Link>
             <Link href="/claim-nft">
-            <button className="mt-4 bg-zinc-100 text-black px-4 py-2 rounded-md">Claim PASS</button>
+            <button className="mt-4 bg-zinc-100 text-black px-4 py-2 rounded-md">Claim NFT</button>
             </Link>
 
         </div>

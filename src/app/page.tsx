@@ -28,7 +28,7 @@ export default function Home() {
             <p>You are looged in</p>
             <Link href="/gated-content">
             <button className="mt-4 bg-zinc-100 text-black px-4 py-2 rounded-md">
-              Go to gated content
+              Play
             </button>
             </Link>
           </div> 

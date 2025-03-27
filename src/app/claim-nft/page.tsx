@@ -15,7 +15,7 @@ export default function NftClaim() {
      <div>
         <div className="p-4 pb-10 min-h-[100vh] flex flex-col items-center justify-center container max-w-screen-lg mx-auto">
             <p className="text-2xl">Claim NFT</p>
-            <p className="mt-4">You can claim SHMIGGLE PASS NFT here</p>
+            <p className="mt-4">Claim SHMIGGLE PASS NFT here to unlock the game</p>
             <div className="my-6">
                 <LoginButton />
             </div>
@@ -36,7 +36,7 @@ export default function NftClaim() {
             >Claim NFT</TransactionButton>
             <Link href={"/gated-content"}>
             <button className="mt-4 bg-zinc-100 text-black px-4 py-2 rounded-md">
-                Play NOW
+                Play
             </button>
             </Link>
         </div>
