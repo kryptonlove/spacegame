@@ -6,6 +6,11 @@ import thirdwebIcon from "@public/thirdweb.svg";
 import { LoginButton } from "./components/LoginButton";
 import Link from "next/link";
 
+export const metadata = {
+  title: 'Space Flush 🚽',
+  description: 'Game by Mr. Diggle & his frens',
+};
+
 export default function Home() {
   const account = useActiveAccount();
 
@@ -47,7 +52,7 @@ function Header() {
       <h1 className="text-2xl md:text-6m font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100">
         Space Flush
       </h1>
-      <p className="text-center">Game by Mr. Diggle & his frens. <br></br>You need a schmiggle pass to play it.</p>
+      <p className="text-center">Connect your wallet to claim Shmiggle Pass on Base and unlock the first minigame by Mr. Diggle and his frens. Some on-chain actions may apply.</p>
     </header>
   );
 }

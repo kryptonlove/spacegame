@@ -50,12 +50,12 @@ const MustLogin = () => {
 const NotAllowed = () => {
     return (
         <div className="flex flex-col min-h-[100vh] items-center justify-center p-4 text-center">
-            <p>You do not own the access NFT</p>
+            <p>You do not own SHMIGGLE PASS NFT</p>
             <Link href="/">
             <button className="mt-4 bg-zinc-100 text-black px-4 py-2 rounded-md">Go to login</button>
             </Link>
             <Link href="/claim-nft">
-            <button className="mt-4 bg-zinc-100 text-black px-4 py-2 rounded-md">Claim NFT</button>
+            <button className="mt-4 bg-zinc-100 text-black px-4 py-2 rounded-md">Claim PASS</button>
             </Link>
 
         </div>

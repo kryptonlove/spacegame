@@ -4,7 +4,7 @@ import { TransactionButton, useActiveAccount } from "thirdweb/react"
 import { LoginButton } from "../components/LoginButton"
 import { claimTo } from "thirdweb/extensions/erc1155"
 import { defineChain, getContract } from "thirdweb"
-import { baseSepolia } from "thirdweb/chains"
+import { base } from "thirdweb/chains";
 import { client } from "../client"
 import Link from "next/link"
 
@@ -23,8 +23,8 @@ export default function NftClaim() {
             transaction={() => claimTo({
                 contract: getContract({
                     client: client,
-                    chain: defineChain(baseSepolia),
-                    address: "0xf522A9AB4CD863684cF4c9Bd3141EcEA57156004"
+                    chain: defineChain(base),
+                    address: "0xd559CcCEF096d5877ECA353aa2141F84E6487B5C"
                 }),
                 to: account?.address || "",
                 quantity: 1n,
