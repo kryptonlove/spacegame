@@ -30,14 +30,11 @@ export const GatedContent = () => {
             background: "radial-gradient(circle,rgb(255, 169, 0),rgb(0, 0, 0))",
         }}
         >
-            <div className="p-4 pb-10 min-h-[100vh] flex flex-col items-center justify-center container max-w-[430px] mx-auto"> {/* Фиксируем ширину */}
+            <div className="p-4 pb-10 min-h-[100vh] flex flex-col items-center justify-center container max-w-[430px] mx-auto"> {/* Fixing width */}
             <LoginButton />
             {!gameLoaded && <p className="mt-4 text-lg font-semibold">Loading game...</p>}
             <div ref={gameRef} className="absolute top-0 left-0 w-full h-full"></div>
             </div>
-
         </div>
-        
-
     );
 };

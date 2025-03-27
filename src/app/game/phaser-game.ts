@@ -5,7 +5,7 @@ import { MainScene } from "./scenes/MainScene";
 export const initPhaserGame = (parentElement: HTMLDivElement | null): Phaser.Game | null => {
     if (!parentElement) return null;
 
-    const maxWidth = 430; // Максимальная ширина под iPhone
+    const maxWidth = 430; // Max Width iPhone
     const game = new Phaser.Game({
         type: Phaser.AUTO,
         width: Math.min(Math.max(window.innerWidth, 320), 430),
@@ -15,7 +15,7 @@ export const initPhaserGame = (parentElement: HTMLDivElement | null): Phaser.Gam
         backgroundColor: '#000000',
         physics: { default: "arcade", arcade: { debug: false } },
         scale: {
-            mode: Phaser.Scale.FIT, // Поддержка изменения размера
+            mode: Phaser.Scale.FIT, // Support changing screen size 
             autoCenter: Phaser.Scale.CENTER_BOTH
         },
         parent: parentElement,
@@ -27,7 +27,6 @@ export const initPhaserGame = (parentElement: HTMLDivElement | null): Phaser.Gam
         scene: [StartScene, MainScene]
     });
 
-    // ✅ Исправленный код ресайза
     // const resizeGame = () => {
     //     if (game && game.isRunning) { // Проверяем, запущен ли Phaser
     //         game.scale.setGameSize(Math.min(window.innerWidth, maxWidth), window.innerHeight);
