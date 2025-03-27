@@ -6,10 +6,10 @@ import thirdwebIcon from "@public/thirdweb.svg";
 import { LoginButton } from "./components/LoginButton";
 import Link from "next/link";
 
-export const metadata = {
-  title: 'Space Flush 🚽',
-  description: 'Game by Mr. Diggle & his frens',
-};
+// export const metadata = {
+//   title: 'Space Flush',
+//   description: 'Game by Mr. Diggle & his frens',
+// };
 
 export default function Home() {
   const account = useActiveAccount();
